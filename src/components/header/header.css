@@ -1,0 +1,92 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*=====CTA======*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/*=====Header Socials======*/
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 10rem;
+}
+
+.header__socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/*=====ME======*/
+
+.me{
+    background-color: var(--color-primary);
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 12rem);
+    margin-top: 4rem;
+    overflow: hidden;
+    padding: 0.4rem ;
+}
+.me>img{
+    border-radius: 50%;
+    transform: translate(0.5rem, 0.5rem);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.me>img:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: all 300ms ease;
+}
+
+/*=====ME======*/
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 11rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+
+/*===Media queries medium size====*/
+@media screen and (max-width: 1024px) {
+    header{
+        height: 68vh;
+    }
+
+}
+
+
+/*===Media queries small size====*/
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    .header__socials, .scroll__down{
+        display: none;  
+    }
+}
