@@ -13,7 +13,7 @@ const Contacts = () => {
     
     const options = {
       method: 'POST',
-      url: 'http://localhost:8010/sendmail',
+      url: 'https://portfolio-be-fdgd.onrender.com/sendmail',
       data:{
         name: e.target.elements.name.value,
         email: e.target.elements.email.value,
