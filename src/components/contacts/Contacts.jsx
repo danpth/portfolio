@@ -1,15 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './contacts.css'
 import {MdEmail} from 'react-icons/md'
 import {IoLogoWhatsapp} from 'react-icons/io'
 import { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import axios from 'axios';
 
 const Contacts = () => {
   const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const [emailSent, setEmailSent] = useState(false);
+  useEffect(() =>{
+    const options = {
+      method: 'POST',
+      url: 'http://localhost:8010/sendmail',
+      data:{
+        name: form.name,
+        email: form.email,
+        message: form.message
+      }
+    }
+    if(emailSent){
+      axios.request(options).then((response)=>{
+        console.log(response.data)
+      }).catch((error) => {
+        console.error(error);
+      })
+    } 
+  }, [emailSent]);
 
+  const sendEmail = (e) => {
+    e.preventDefault()
+    setEmailSent(true)
     e.target.reset()
   };
   return (
