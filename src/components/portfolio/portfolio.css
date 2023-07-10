@@ -33,6 +33,12 @@
     margin-bottom: 0.6rem;
 }
 
+.workinprog{
+    text-align: center;
+    color: yellow;
+    margin-bottom: 2rem;
+}
+
 /*===Media queries medium size====*/
 @media screen and (max-width: 1024px) {
     .portfolio__container{

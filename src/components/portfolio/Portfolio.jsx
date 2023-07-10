@@ -9,6 +9,20 @@ const data = [
     title: 'This is a portfolio item title',
     github: 'https://github.com/danpth/',
     demo: 'https://github.com/danpth/'
+  },
+  {
+    id: 2,
+    image: IMG1,
+    title: 'This is a portfolio item title',
+    github: 'https://github.com/danpth/',
+    demo: 'https://github.com/danpth/'
+  },
+  {
+    id: 3,
+    image: IMG1,
+    title: 'This is a portfolio item title',
+    github: 'https://github.com/danpth/',
+    demo: 'https://github.com/danpth/'
   }
 ]
 
@@ -17,6 +31,7 @@ const Portfolio = () => {
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
+      <h3 className='workinprog'>WORK IN PROGRESS</h3>
 
       <div className="container portfolio__container">
         {

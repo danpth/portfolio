@@ -13,7 +13,9 @@ const About = () => {
           </div>
         </div>
         <div className="about__content">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex totam temporibus repudiandae suscipit voluptas placeat a numquam laudantium vero. Rem sed eaque nulla quo modi veniam quis vitae quaerat repudiandae sit autem esse molestiae illum corrupti beatae temporibus at error asperiores cum omnis, tempore ex doloribus qui laboriosam. Ipsum.</p>
+          <p>
+            Hello, I'm Daniel and I currently work as a Junior Back-End Developer (1+ years of experience). I mainly develop microservices using Java Spring Boot but I'm always willing to learn new things. In my free time I also learned some Front-End and Game Development in Unity 3D. If you want to know more about me or want to work together feel free to contact me! 
+          </p>
           <a href="#contacts" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
