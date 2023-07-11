@@ -60,6 +60,7 @@ section{
     margin-top: 8rem;
     height: 100vh;
     padding-top: 2rem;
+    height: fit-content;
 }
 
 section > h2, section > h5 {

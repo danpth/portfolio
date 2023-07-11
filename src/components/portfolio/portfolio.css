@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    height: auto !important;
+    height: fit-content !important;
+    margin-bottom: 2rem;
 }
 
 .portfolio__item{
